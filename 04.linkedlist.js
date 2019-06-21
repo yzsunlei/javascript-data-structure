@@ -1,7 +1,7 @@
 /**
  * Created by lei.sun on 2017/8/13.
  */
-//
+// 节点
 function Node(element) {
     this.element = element;
     this.next = null;
