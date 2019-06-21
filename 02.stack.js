@@ -1,7 +1,7 @@
 /**
  * Created by lei.sun on 2017/8/13.
  */
-// 栈
+// 堆栈
 function Stack() {
     this.dataStore = [];
     this.top = 0;
