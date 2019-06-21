@@ -96,7 +96,6 @@ function difference(set) {
     return tempSet;
 }
 
-
 // 测试
 var cis = new Set();
 var it = new Set();
