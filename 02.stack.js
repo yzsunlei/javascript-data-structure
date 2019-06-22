@@ -1,7 +1,7 @@
 /**
  * Created by lei.sun on 2017/8/13.
  */
-// 堆栈
+// 栈
 function Stack() {
     this.dataStore = [];
     this.top = 0;
@@ -49,3 +49,5 @@ console.log("length:" + s.length());
 // 进制间相互转换
 // 回文判断
 // 递归演示
+
+// 堆和栈不一样
