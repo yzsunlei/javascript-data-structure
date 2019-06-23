@@ -108,5 +108,3 @@ it.add("Jennifer");
 var diff = new Set();
 diff = cis.difference(it);
 console.log(cis.show() + " difference " + it.show() + " -> " + diff.show());
-
-// 解决碰撞的两种方法：开链法、线性探测法
