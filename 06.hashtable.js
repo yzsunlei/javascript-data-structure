@@ -9,7 +9,6 @@ function HashTable() {
     this.showDistro = showDistro;
     this.put = put;
     this.get = get;
-
 }
 
 // put for linear probing
@@ -33,7 +32,7 @@ function put(key, data) {
     var index = 0;
     if (this.table[pos][index] == undefined) {
         this.table[pos][index] = data;
-    }else {
+    } else {
         while (this.table[pos][index] != undefined) {
             ++index;
         }
@@ -98,8 +97,7 @@ function inHash(key, arr) {
     var n = 0;
     if (key == arr[hash][n]) {
         return true;
-    }
-    else {
+    } else {
         while (arr[hash][n] != undefined) {
             if (arr[hash][n] == key) {
                 return true;
