@@ -153,5 +153,6 @@ for (var i = 0; i < someNames.length; ++i) {
 hTable.showDistro();
 
 // 实例
+// 解决碰撞的两种方法：
 // 开链法
 // 线性探测法
