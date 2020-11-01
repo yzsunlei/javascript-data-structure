@@ -146,6 +146,7 @@ function removeNode(node, data) {
             return node.left;
         }
         // node has two children
+        // 要继续把右侧子树中的最小节点移除，毕竟它已经被移至要移除的节点的位置了
         var tempNode = getSmallest(node.right);
         node.data = tempNode.data;
         node.right = removeNode(node.right, tempNode.data);
@@ -206,3 +207,17 @@ console.log("\n");
 // var num = parseInt(readline());
 // nums.remove(num);
 // inOrder(nums.root);
+
+// 一些概念
+// 树的高度取决于所有节点深度的最大值。
+// 二叉搜索树（BST）是二叉树的一种，但是它只允许你在左侧节点存储（比父节点）小的值，在右侧节点存储（比父节点）大（或者等于）的值。
+// 访问树的所有节点有三种方式：中序、先序和后序。
+// 中序遍历的一种应用就是对树进行排序操作。
+// 先序遍历的一种应用是打印一个结构化的文档。
+// 后序遍历的一种应用是计算一个目录和它的子目录中所有文件所占空间的大小。
+// 难点：移除一个节点
+
+// AVL树是最先发明的自平衡二叉查找树。在AVL树中任何节点的两个子树的高度最大差别为1，所以它也被称为高度平衡树。
+
+
+// 红黑树是一种特化的AVL树（平衡二叉树）。都是在进行插入和删除操作时通过特定操作保持二叉查找树的平衡，从而获得较高的查找性能。

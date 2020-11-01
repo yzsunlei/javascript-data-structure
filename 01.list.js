@@ -132,3 +132,8 @@ console.log(names.toString());
 for (names.front(); names.hasNext(); names.next()) {
     console.log(names.getElement());
 }
+
+// 斐波那契数列
+// fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
+// 原生函数
+// push、pop、unshift、shift、splice

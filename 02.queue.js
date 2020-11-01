@@ -59,3 +59,18 @@ console.log("Back of queue：" + q.back());
 // 使用队列：方块舞的舞伴分配问题
 // 使用队列对数据进行排序
 // 优先队列
+this.enqueue = function(element, priority){
+    let queueElement = new QueueElement(element, priority);
+
+    let added = false;
+    for (let i=0; i<items.length; i++){
+        if (queueElement.priority < items[i].priority){ // {2}
+            items.splice(i,0,queueElement);             // {3}
+            added = true;
+            break; // {4}
+        }
+    }
+    if (!added){
+        items.push(queueElement); //{5}
+    }
+};

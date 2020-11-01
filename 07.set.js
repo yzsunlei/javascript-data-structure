@@ -50,6 +50,7 @@ function contains(data) {
     }
 }
 
+// 并集
 function union(set) {
     var tempSet = new Set();
     for (var i = 0; i < this.dataStore.length; ++i) {
@@ -63,6 +64,7 @@ function union(set) {
     return tempSet;
 }
 
+// 交集
 function intersect(set) {
     var tempSet = new Set();
     for (var i = 0; i < this.dataStore.length; ++i) {
@@ -73,6 +75,7 @@ function intersect(set) {
     return tempSet;
 }
 
+// 子集
 function subset(set) {
     if (this.size() > set.size()) {
         return false;
@@ -86,6 +89,7 @@ function subset(set) {
     return true;
 }
 
+// 差集
 function difference(set) {
     var tempSet = new Set();
     for (var i = 0; i < this.dataStore.length; ++i) {
@@ -108,3 +112,5 @@ it.add("Jennifer");
 var diff = new Set();
 diff = cis.difference(it);
 console.log(cis.show() + " difference " + it.show() + " -> " + diff.show());
+
+// 并集、交集、差集、子集

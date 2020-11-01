@@ -35,13 +35,13 @@
 
 * **字典**：
 
-以键-值对形式存储数据的数据结构。
+以键-值对形式存储数据的数据结构。 
 
 [示例代码](https://github.com/yzsunlei/javascript-data-structure/blob/master/05.dictionary.js)
 
-* **散列表**：
+* **散列表**： 
 
-散列是一种常用的数据存储技术，散列后的数据可以快速地插入或取用。
+散列是一种常用的数据存储技术，散列后的数据可以快速地插入或取用。 
 
 [示例代码](https://github.com/yzsunlei/javascript-data-structure/blob/master/06.hashtable.js)
 
